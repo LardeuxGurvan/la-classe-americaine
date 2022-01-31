@@ -1,0 +1,33 @@
+{
+  "name": "la-classe-americaine",
+  "version": "1.0.0",
+  "description": "A little API that response random sentences from \"La Classe américaine\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "DEBUG=*,-express:*,-nodemon* npx nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LardeuxGurvan/la-classe-americaine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LardeuxGurvan/la-classe-americaine/issues"
+  },
+  "homepage": "https://github.com/LardeuxGurvan/la-classe-americaine#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  }
+}
