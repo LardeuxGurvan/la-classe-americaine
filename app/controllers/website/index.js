@@ -3,13 +3,13 @@ const serviceDataMapper = require('../../models/service');
 const serviceController = {
 
   async getAll(req, res) {
-    const phrases = await serviceDataMapper.findAll();
-    return res.json(phrases);
+    const quotes = await serviceDataMapper.findAll();
+    return res.json(quotes);
   },
 
-  async getOne(req, res) {
-    const phrase = await serviceDataMapper.randomOne();
-    return res.json(phrase);
+  async home(req, res) {
+    const quote = await serviceDataMapper.findOne();
+    return res.json(quote);
   },
 
 };

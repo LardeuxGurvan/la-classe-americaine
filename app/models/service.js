@@ -1,8 +1,12 @@
-const client = require('../config/db');
+const data = require('../../data/data.json');
 
 module.exports = {
   async findAll() {
-    const result = await client.query('SELECT * FROM "quote" JOIN "actor" ON "quote"."actor_id" = "actor"."id"');
-    return result.rows;
+    const result = data;
+    return result;
+  },
+  async findOne() {
+    const result = data[Math.floor(Math.random() * data.length)];
+    return result;
   },
 };

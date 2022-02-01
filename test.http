@@ -1,7 +1,7 @@
 # Test File for routes
 # Rest Client extention needed
 
-@endpoint = http://localhost:{{$dotenv PORT}}/
+@endpoint = http://localhost:{{$dotenv PORT}}
 
 ### Route for website
-GET {{ endpoint }}
+GET {{ endpoint }}/
