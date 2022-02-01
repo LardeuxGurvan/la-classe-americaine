@@ -1,0 +1,42 @@
+# Test File for routes
+# Rest Client extention needed
+
+@endpoint = http://localhost:{{$dotenv PORT}}/api
+
+#####################################################
+#                   VALID ROUTES
+#####################################################
+
+### Route for random quote
+GET {{ endpoint }}/
+
+### Route for all actors
+GET {{ endpoint }}/actor
+
+### Route for one actor
+GET {{ endpoint }}/actor/2
+
+### Route for all quotes
+GET {{ endpoint }}/quote
+
+### Route for one quote
+GET {{ endpoint }}/quote/2
+
+#####################################################
+#                   WRONG WAY
+#####################################################
+
+### Route for random quote
+GET {{ endpoint }}/qs
+
+### Route for all actors
+GET {{ endpoint }}/actors
+
+### Route for one actor
+GET {{ endpoint }}/actor/9
+
+### Route for all quotes
+GET {{ endpoint }}/quoteq
+
+### Route for one quote
+GET {{ endpoint }}/quote/0
