@@ -1,10 +1,10 @@
 const client = require('../config/db');
 /**
  * @typedef {object} RandomQuote - Citation aléatoire
- * @property {number} id - Identifiant unique de l'enregistrement dans la table "quote"
+ * @property {number} id - Identifiant unique de la citation
  * @property {string} phrase - La citation
  * @property {string} character - Le nom du personnage
- * @property {string} actor_name - Nom actor de l'acteur de doublage
+ * @property {string} actor_name - Nom de l'acteur de doublage
  */
 module.exports = {
   /**

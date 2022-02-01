@@ -1,10 +1,16 @@
 const express = require('express');
-
+const cors = require('cors');
 const router = require('./router');
 
 const app = express();
+require('./helpers/apiDocs')(app);
+
+app.set('view engine', 'ejs');
+app.set('views', `${process.cwd()}/app/assets/views`);
 
 app.use(express.json());
+
+app.use(cors(process.env.CORS_DOMAINS ?? '*'));
 
 app.use(router);
 

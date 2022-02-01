@@ -9,7 +9,7 @@ const serviceController = {
 
   async home(req, res) {
     const quote = await serviceDataMapper.findOne();
-    return res.json(quote);
+    return res.render('index', { quote });
   },
 
 };
