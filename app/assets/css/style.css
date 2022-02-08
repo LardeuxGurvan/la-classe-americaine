@@ -1,0 +1,60 @@
+body{
+    
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+}
+
+.nav-container{
+    height: 10vh;
+    background-color: rgb(8, 8, 8);
+}
+
+.main__label-container{
+    padding: 10px;
+}
+
+.main-container{
+    background-color: #332f14;
+    width: 100%;
+    height: 40vh;
+}
+
+.main__label-container{
+    margin: 15px;
+background-color: #49411d;
+color: #ebe254;
+}
+
+.main__quote-label{
+    text-align: center;
+margin: 10px;
+font-size: 1.2rem;
+}
+
+.header-container{
+    background-color: #000;
+    width: 100%;
+    height: 25vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header__title{
+    font-size: 3rem;
+    color: #ffe754;
+}
+
+
+.footer-container{
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    color: #e8eaee;
+    
+}
