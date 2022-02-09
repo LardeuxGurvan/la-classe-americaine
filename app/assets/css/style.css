@@ -1,0 +1,163 @@
+body {
+    font-family: 'Rowdies', cursive;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.nav-container {
+    height: 5vh;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__button {
+    font-family: 'Rowdies', cursive;
+    background-color: black;
+
+    color: #ffe754;
+    width: 100%;
+    height: 100%;
+    border: black solid 6px;
+    font-size: 1rem;
+    transition: 2s;
+}
+
+.nav__button:hover {
+    font-size: 1.2rem;
+    background-color: rgb(255, 245, 231);
+    color: #252525;
+
+    transition: 0.2s;
+}
+
+.nav__link {
+    text-align: center;
+    width: 100%;
+}
+
+.main-container,
+.main-container--about {
+    /* background-color: #332f14; */
+    background-color: #938b4f;
+    width: 100%;
+    height: 60vh;
+    text-shadow: rgb(49, 39, 0) 1px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main__label-container,
+.main__label-container--about {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: #49411d;
+    color: #ffee81;
+    border-radius: 10px;
+    box-shadow: 15px -16px #16140917;
+}
+
+.main-container--about {
+    background-color: #1f1c0d;
+}
+
+.main__label-container--about {
+    background-image: url('https://i0.wp.com/rayhaber.com/wp-content/uploads/2020/08/john-wayne-kimdir.jpg?fit=1424%2C800&ssl=1');
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+    background-position-y: center;
+    background-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__paragraph {
+    margin: 10px;
+    line-height: 1.3rem;
+    text-shadow: rgb(49, 39, 0) 1px 0 10px;
+}
+
+.paragraph-link {
+    color: rgb(255, 227, 185);
+}
+
+.main__quote-label {
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.main__character-label {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+
+.header-container {
+    background-color: #000;
+    width: 100%;
+    height: 15vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title {
+    font-size: 3rem;
+    color: #ffe754;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+
+.footer-container {
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    color: #e8eaee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__reroll-button {
+    font-family: 'Rowdies', cursive;
+    background-color: black;
+    color: #ffe754;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        height: 20vh;
+    }
+
+    .header__title {
+        font-size: 2.9rem;
+    }
+
+    .main-container {
+        height: 55vh;
+    }
+
+    .main__quote-label {
+        font-size: 1.5rem;
+    }
+}

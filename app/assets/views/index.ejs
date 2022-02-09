@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<html lang="fr">
+<%- include('partials/header') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Classe américaine API</title>
-</head>
-
-<body>
-    <div class="container">
-        <nav class="nav-container">
-            <button class="nav__button">
-                <a href="" class="nav__link">
-                    Accueil
-                </a>
-            </button>
-            <button class="nav__button">
-                <a href="" class="nav__link">
-                    A propos
-                </a>
-            </button>
-            <button class="nav__button">
-                <a href="" class="nav__link">
-                    API
-                </a>
-            </button>
-        </nav>
-        <header class="header-container">
-            <div class="header__title-container">
-                <h1 class="header__title">La Classe américaine API</h1>
-            </div>
-        </header>
-        <main class="main-container">
-            <img src="" alt="" class="main__img">
+    <main class="main-container">
+        <img src="" alt="" class="main__img">
+        <div class="main__label-container" data-aos="flip-left">
             <div class="main__quote-container">
                 <h2 class="main__quote-label">"<%= quote.phrase %>"</h2>
-                <h3 class="main__character-label"><%= quote.character %></h3>
+                <h3 class="main__character-label">
+                    <%= quote.character %>
+                </h3>
             </div>
             <div class="main__actor-container">
-                <h4 class="main__actor-name"><%= quote.actor %> </h4>
+                <h4 class="main__actor-name">
+                    <%= quote.actor %>
+                </h4>
                 <img src="" alt="" class="main__actor-img">
             </div>
-        </main>
-        <footer class="footer-container"></footer>
-    </div>
-</body>
-
-</html>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <button id="reroll-button" class="footer__reroll-button">Clique !</button>
+    </footer>
+    <%- include('partials/footer') %>
