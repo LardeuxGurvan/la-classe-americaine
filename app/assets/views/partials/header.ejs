@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./../css/reset.css">
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ressources/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ressources/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ressources/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../ressources/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <title>La Classe américaine API</title>
 </head>
+
 <body>
     <div class="container">
         <nav class="nav-container">
-            <button class="nav__button">
-                <a href="" class="nav__link">
-                    Accueil
-                </a>
-            </button>
-            <button class="nav__button">
-                <a href="" class="nav__link">
-                    A propos
-                </a>
-            </button>
-            <button class="nav__button">
-                <a href="/api-docs" class="nav__link">
-                    API
-                </a>
-            </button>
+
+            <a href="/" class="nav__link">
+                <button class="nav__button">Accueil</button>
+            </a>
+
+            <a href="/about" class="nav__link">
+                <button class="nav__button">A propos</button>
+            </a>
+
+            <a href="/api-docs" class="nav__link">
+                <button class="nav__button">API-Docs</button>
+            </a>
         </nav>
         <header class="header-container">
             <div class="header__title-container">

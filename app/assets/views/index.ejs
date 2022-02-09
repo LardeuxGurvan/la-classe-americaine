@@ -2,7 +2,7 @@
 
     <main class="main-container">
         <img src="" alt="" class="main__img">
-        <div class="main__label-container">
+        <div class="main__label-container" data-aos="flip-left">
             <div class="main__quote-container">
                 <h2 class="main__quote-label">"<%= quote.phrase %>"</h2>
                 <h3 class="main__character-label">
@@ -17,4 +17,7 @@
             </div>
         </div>
     </main>
+    <footer class="footer-container">
+        <button id="reroll-button" class="footer__reroll-button">Clique !</button>
+    </footer>
     <%- include('partials/footer') %>
