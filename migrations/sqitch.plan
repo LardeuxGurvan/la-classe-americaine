@@ -2,3 +2,4 @@
 %project=laclasse
 
 initdb 2022-01-31T19:17:26Z Dalarog,,, <dalarog@rohan-hp-elitebook-820-g3> # initialisation des tables
+seeding 2022-02-09T20:15:58Z Dalarog,,, <dalarog@rohan-hp-elitebook-820-g3> # add seeding for heroku bdd
