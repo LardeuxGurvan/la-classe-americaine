@@ -1,5 +1,5 @@
 const api = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://la-classe-americaine-api.herokuapp.com',
 
   getQuoteFromAPI: async () => {
     try {
