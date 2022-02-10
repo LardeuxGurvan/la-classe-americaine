@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE "quote", "actor";
+DROP TABLE if exists "quote", "actor";
 
 COMMIT;
